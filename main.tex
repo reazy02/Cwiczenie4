@@ -1,0 +1,239 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usetheme{NewPwr}
+
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{carlito}
+
+\usefonttheme{professionalfonts}
+
+\title[Aerodynamika w F1]{Aerodynamika w F1}
+\author{Bartłomiej Posłuszny}
+\institute{}
+\date{}
+
+\begin{document}
+
+%-------------------------------------------------
+\begin{frame}
+  \titlepage
+  \vspace{0.1cm}
+  \centering
+  \includegraphics[
+    width=0.65\textwidth,
+    frame,
+    margin=2pt
+  ]{images/obrazek1.png}
+
+\end{frame}
+
+%-------------------------------------------------
+\begin{frame}{Zaliczenie zadania}
+    https://github.com/reazy02/Cwiczenie4
+\end{frame}
+
+
+
+
+%-------------------------------------------------
+\begin{frame}{Spis treści}
+  \tableofcontents
+\end{frame}
+
+%-------------------------------------------------
+\section{Wprowadzenie}
+
+\begin{frame}{Historia Formuły 1}
+F1 to międzynarodowy wyścig samochodowy który trwa nieprzerwanie od początków lat 50-tych. Pierwszy wyścig odbył się na starym lotnisku RAF
+oebcnie znanym jako tor Silverstone. Pierwsze samochody F1 posiadały silniki z przodu, polegając głównie na mocy silnika a ich aerodynamika opierała się głównie na kształcie podwozia.
+
+Prawdziwy przełom nastąpił w latach 60 gdzie takie zespoły jak Lotus zaczeły eksperymentować z skrzydłami oraz lotkami (np.Lotus 49B) który generowały docisk aerodynamiczny wciskający bolid w tor.
+
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+    \centering
+    \includegraphics[width=0.9\paperwidth,height=0.9\paperheight,frame, margin=1pt,keepaspectratio]{images/obrazek2.jpg}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Wstęp do aerodynamiki}
+Zadaniem aerodynamiki jest wytworzenie siły dociskowej w celu przyciśnięcia opon bolidu do toru i zwiększenie przyczepności na zakrętach z jednoczesnym zminimalizowaniem oporu powietrza które zostaje wywołane przez turbulencję co spowolnia bolid.
+
+  \centering
+  \includegraphics[
+    width=0.6\paperwidth,
+    height=0.5\paperheight,
+    frame,
+    margin=1pt,
+    keepaspectratio,
+  ]{images/obrazek3.png}
+
+\end{frame}
+
+
+
+%------------------------------------------------
+\begin{frame}{Znaczenie aerodynamiki}
+Elementy aerodynamiczne pozwalają na minimalizowanie oporu powietrza ale i nie tylko, wpływają one także na wiele innych aspektów takich jak: 
+\begin{itemize}
+  \item Większą efektywność paliwową (mniejsze spalanie)
+  \item Osiągi pojazdów, większa prędkość oraz przyspieszenie
+  \item Doskonała przyczepność i lepsza kontrola co prowadzi do znacznie szybszego pokonywania zakrętów.
+\end{itemize}
+\end{frame}
+
+%-------------------------------------------------
+\section{Przyczepność i tarcie}
+
+\begin{frame}{Źródła przyczepności}
+Źródłem przyczepności samochodu F1 jest siła tarcia działająca między oponą a podłożem, jeśli siła dośrodkowa działająca na samochód jadący po łuku drogi jest zbyt mała to samochód wpadnie w poślizg.
+
+\[
+T = f \cdot N
+\]
+
+gdzie:
+\begin{itemize}
+  \item $f$ – współczynnik tarcia,
+  \item $N$ – siła nacisku na podłoże.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Przyczepność a opony}
+\begin{itemize}
+  \item Współczynnik tarcia nie jest stały.
+  \item Zależy m.in. od:
+    \begin{itemize}
+      \item temperatury,
+      \item pogody,
+      \item rodzaju nawierzchni.
+    \end{itemize}
+  \item Opony wyścigowe w F1 mogą osiągać wartości
+        nawet $f \approx 1{,}7$ na suchej nawierzchni.
+\end{itemize}
+\centering
+  \includegraphics[
+    width=0.6\paperwidth,
+    height=0.5\paperheight,
+    frame,
+    margin=1pt,
+    keepaspectratio,
+  ]{images/obrazek4.jpg}
+\end{frame}
+
+%-------------------------------------------------
+\section{Docisk aerodynamiczny}
+
+\begin{frame}{Docisk aerodynamiczny}
+Oprócz tarcia mechanicznego, na przyczepność wpływa również
+\textbf{siła aerodynamiczna}. Siła ta generowana jest tak samo, jak siła nośna działająca w samolocie. 
+\begin{block}{Kluczowa idea}
+Działa ona analogicznie do siły nośnej w samolocie,
+lecz jest skierowana \textbf{w dół}, dociskając bolid do toru.
+\end{block}
+Skrzydło w bolidzie kieruje powietrze w górę, a na podstawie zasady akcji-reakcji powietrze odpycha samochód w dół, zwiększając jego ciężar poprzez docisk aerodynamiczny.
+\end{frame}
+
+
+
+\begin{frame}{Elementy generujące docisk}
+Największą rolę w generowaniu docisku aerodynamicznego odgrywają:
+\begin{enumerate}
+  \item Tylne skrzydło,
+  \item Dyfuzor (podłoga),
+  \item Przednie skrzydło.
+\end{enumerate}
+\end{frame}
+
+%-------------------------------------------------
+\section{Skrzydła aerodynamiczne}
+
+\begin{frame}{Tylne skrzydło – zasada działania}
+Zadaniem tylnego skrzydła jest nakierować powietrze tak aby jak najefektywniej opływało resztę auto. Nachylenie płatów skrzydeł ma kluczową rolę w znalezieniu kompromisu pomiędzy dociskiem a prędkością. Czyli spoiler:
+\begin{itemize}
+  \item Kieruje powietrze nad i za bolidem.
+  \item Kąt nachylenia skrzydła decyduje o kompromisie:
+    \begin{itemize}
+      \item większy docisk vs. większy opór,
+      \item większa prędkość maksymalna vs. stabilność.
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Dyfuzor - zasada działania}
+Znajdujący się na spodzie bolidu, generuje siłę docisku (przyczepność), kierując powietrze przepływające pod podłogą.
+\begin{itemize}
+  \item Jego zadaniem jest:
+    \begin{itemize}
+      \item Utrzymanie przepływu bez turbulencji lub nadmiernego oporu.
+      \item Tworzenie obszaru niskiego ciśnienia.
+    \end{itemize}
+  \item Stanowi prawie połowę całkowitej siły docisku bolidu, jego kształt i wymiar jest ściśle regulowany przez przepisy. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Przednie skrzydło i nos bolidu}
+W przednie skrzydle płaty odginają się do tyłu tak samo jak w tylnym chodzi tu przede wszystkim o zmniejszenie oporu aerodynamicznego na prostej.
+\begin{itemize}
+  \item Przednie skrzydło pracuje najefektywniej blisko nawierzchni.
+  \item Tworzy się wąski kanał przepływu powietrza.
+  \item Zwiększenie prędkości przepływu spadek ciśnienia.
+  \item Powstaje efekt przyssania przedniej osi bolidu do toru.
+\end{itemize}
+
+
+\end{frame}
+
+%-------------------------------------------------
+\section{Wpływ docisku}
+
+\begin{frame}{Skala sił aerodynamicznych}
+\begin{itemize}
+  \item Nowoczesne bolidy F1 są zdolne do generowania przeciążenia rzędu \textbf{3,5 G}.
+  \item Przy prędkości ok. \textbf{183 km/h} docisk aerodynamiczny jest równy ciężarowi bolidu.
+\end{itemize}
+
+\begin{block}{Ciekawostka}
+Teoretycznie bolid mógłby jechać po suficie.
+\end{block}
+\end{frame}
+
+%-------------------------------------------------
+\section{Zakończenie}
+
+\begin{frame}{Podsumowanie}
+\begin{itemize}
+  \item Aerodynamika jest kluczowa dla osiągów w F1.
+  \item Docisk zwiększa przyczepność bez zwiększania masy.
+  \item Odpowiedni balans między dociskiem a oporem
+        decyduje o konkurencyjności bolidu.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+    \centering
+    {\Huge \textbf{Dziękuję za uwagę}}\\[1em] 
+    Bartłomiej Posłuszny
+\end{frame}
+
+
+%-------------------------------------------------
+\section{Bibliografia}
+
+\begin{frame}{Źródła}
+\scriptsize
+\begin{itemize}
+  \item wikipedia.com
+  \item formula1.com
+  \item parcfer.me
+  \item cyrkf1.pl
+  \item Google grafika 
+\end{itemize}
+\end{frame}
+
+\end{document}
